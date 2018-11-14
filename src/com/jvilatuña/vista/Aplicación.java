@@ -13,9 +13,10 @@ import javax.swing.JOptionPane;
  */
 public class Aplicación {
     public static void main(String[] args) {
-        factorial();
-        pares();
-        multiplos3();
+        //factorial();
+        //pares();
+        //multiplos3();
+        fibonaci();
     }
     public static void factorial() {
         long fac=1;
@@ -52,4 +53,24 @@ public class Aplicación {
         }
         System.out.println("");
     }
+     public static void fibonaci(){
+         
+          int i, x=0, y=1,z=1;
+          
+          for(i=1;i<10;i++){
+		z = x + y;
+		x = y;
+		y = z;
+                
+                
+          }
+          JOptionPane.showConfirmDialog(null,"fibonaci es :  "+z);
+     }
+    
+    
+    
+    
+    
+    
+    
 }
